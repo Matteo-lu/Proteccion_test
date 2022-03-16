@@ -15,7 +15,7 @@ from api.v1.views import app_views, fibo_function
 
 @app_views.route('/message', strict_slashes=False)
 def message():
-    """method to return status ok"""
+    """view to send email with fibonacci result"""
 
     result = fibo_function.fibonacci()
     current = result["current time"]
